@@ -102,4 +102,4 @@ for (int i=0; i<dataset.GetLength(0); i++)
     Collision.insert(key, row, myTable);
 }
 
-Collision.printData(myTable);
+// Collision.printData(myTable);
