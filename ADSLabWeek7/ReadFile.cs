@@ -3,7 +3,8 @@ public class ReadFile
 
     public static string [,] readCSV ()
     {
-        string filename = "iso-country-codes.csv";
+        string filename = @"/Users/zairulmazwan/Dotnet/ADSLabWeek7_Sol/ADSLabWeek7/iso-country-codes.csv";
+        //string filename = @"iso-country-codes.csv";
 
         StreamReader sr = null;
         string [,] data = null;

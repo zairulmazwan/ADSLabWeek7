@@ -96,9 +96,8 @@ public class DoublyLinkedList
 		
 		Node current = nodes.head;
 		Console.WriteLine("LinkedList: ");
-		
 		while(current!=null) {
-			Console.WriteLine(current.data[0]);
+			Console.Write(current.data[0]);
 			if (current.next!=null && current.previous!=null) {
 				Console.Write("<=>");
 			}

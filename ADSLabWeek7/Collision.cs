@@ -45,6 +45,42 @@ public class Collision
 			Console.WriteLine("\n");
 		}
 	}
+
+	public static void emptyIndex(DoublyLinkedList [] myTable)
+	{
+		int empty = 0;
+		for (int i=0; i<myTable.Length; i++)
+		{
+			if (myTable[i] == null)
+				empty++;
+			
+		}
+		Console.WriteLine("There are "+empty+" empty slots in the hashtable");
+	}
+
+	public static void getLongestLinkedListIndex(DoublyLinkedList [] myTable)
+	{
+		int index = -1;
+		for (int i=0; i<myTable.Length; i++)
+		{
+			if (myTable[i] != null)
+			{
+
+				if (myTable[i].length>index)
+				{
+					index = i;
+					
+				}
+					
+			}
+			
+		}
+		Console.WriteLine("Index with the longest linked list : "+index);
+		Console.WriteLine("They are "+myTable[index].length+" nodes in the index");
+		DoublyLinkedList.printNodes(myTable[index]);
+		
+
+	}
 	
 	public static Boolean findNode(int key, DoublyLinkedList [] myTable) {
 		
