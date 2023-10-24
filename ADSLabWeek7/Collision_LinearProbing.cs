@@ -40,7 +40,7 @@ public class Collision_LinearProbing
 	}
 	
 	public static void printData (string [,] myTable) {
-		for (int i = 0; i<myTable.Length; i++) {
+		for (int i = 0; i<myTable.GetLength(0); i++) {
 			for (int j=0; j<myTable.GetLength(1); j++)
 			{
 				Console.WriteLine(myTable[i,j]);
