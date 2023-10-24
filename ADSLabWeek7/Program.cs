@@ -7,7 +7,7 @@
 // ReadFile.printArray(data);
 
 
-//Linear Probing
+//Tutorial 7: Linear Probing
 // Console.WriteLine("::Linear Hashing::");
 // string [] myTable = new String [5];
 
@@ -19,6 +19,45 @@
 	
 // Collision_LinearProbing.printData(myTable);	
 
+//Solution Tutorial 7: Linear Probing
+
+string [,] dataset = ReadFile.readCSV();
+// ReadFile.printArray(dataset);
+
+// string [,] countries_LP = new string[242,5];
+// for (int i=0; i<dataset.GetLength(0); i++)
+// {
+//   //  Console.WriteLine(dataset[i,3]);
+//    int key = Int32.Parse(dataset[i,3]); //this is the key for the index i.e num_code
+//    string [] row = new string [dataset.GetLength(1)];
+
+//    row[0] = dataset[i,0];
+//    row[1] = dataset[i,1];
+//    row[2] = dataset[i,2];
+//    row[3] = dataset[i,3];
+//    row[4] = dataset[i,4];
+
+//   Collision_LinearProbing.insert(key, row, countries_LP);
+// }
+
+//ReadFile.printArray(countries_LP);
+
+// Console.WriteLine("1.	Which country is stored in the first position of the array?");
+// Console.WriteLine(countries_LP[0,0]);
+
+// Console.WriteLine("2.	Which country is stored in the last position of the array?");
+// Console.WriteLine(countries_LP[countries_LP.GetLength(0)-1,0]);
+
+// Console.WriteLine("3.	Which country is stored in the 53rd position of the array?");
+// Console.WriteLine(countries_LP[52,0]);
+
+// Console.WriteLine("4.	What is United Kingdom position in the array?");
+// string uk = "United Kingdom";
+// for (int i=0; i<countries_LP.GetLength(0); i++)
+// {
+//   if (countries_LP[i,0] == uk)
+//     Console.WriteLine("Index : "+i);
+// }
 
 
 //Double Hashing
@@ -36,12 +75,31 @@
 //------------------------------------------------------------------------
 //PART 2
 
-DoublyLinkedList [] myTable = new DoublyLinkedList [5];
-Collision.insert(9, "Zairul", myTable); 
-Collision.insert(5, "Mazwan", myTable);  
-Collision.insert(15, "Rania", myTable);
-Collision.insert(16, "John", myTable);
-Collision.insert(21, "Mariam", myTable);
+// DoublyLinkedList [] myTable = new DoublyLinkedList [5];
+// Collision.insert(9, "Zairul", myTable); 
+// Collision.insert(5, "Mazwan", myTable);  
+// Collision.insert(15, "Rania", myTable);
+// Collision.insert(16, "John", myTable);
+// Collision.insert(21, "Mariam", myTable);
 		
-Collision.printData (myTable);
-Console.WriteLine("\nFind a user with id 21 "+Collision.findNode(21, myTable));
+// Collision.printData (myTable);
+// Console.WriteLine("\nFind a user with id 21 "+Collision.findNode(21, myTable));
+
+
+//Solution Tutorial 7: Doubly Linked List
+DoublyLinkedList [] myTable = new DoublyLinkedList [100];
+for (int i=0; i<dataset.GetLength(0); i++)
+{
+    int key = Int32.Parse(dataset[i,3]); //this is the key for the index i.e num_code
+    string [] row = new string [dataset.GetLength(1)];
+
+    row[0] = dataset[i,0];
+    row[1] = dataset[i,1];
+    row[2] = dataset[i,2];
+    row[3] = dataset[i,3];
+    row[4] = dataset[i,4];
+
+    Collision.insert(key, row, myTable);
+}
+
+Collision.printData(myTable);

@@ -23,7 +23,7 @@ public class ReadFile
                 col = val.Length;
             }
            
-           data = new string[row,col];
+           data = new string[row-1,col];  // to exclude the header
 
            sr = new StreamReader(File.OpenRead(filename));
            int i = 0;
@@ -35,7 +35,7 @@ public class ReadFile
                 for (int j=0; j<val.Length; j++)
                 {
                     if (i>0) //exclude the heading
-                        data[i,j] =  val[j];
+                        data[i-1,j] =  val[j];
                 }
                 i++;
            }

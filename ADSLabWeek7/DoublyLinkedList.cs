@@ -70,7 +70,7 @@ public class DoublyLinkedList
 		}
 	}
 	
-	public Boolean findNode (String x) {
+	public Boolean findNode (string [] x) {
 		Boolean res = false;
 		Node current = head;
 
@@ -98,7 +98,7 @@ public class DoublyLinkedList
 		Console.WriteLine("LinkedList: ");
 		
 		while(current!=null) {
-			Console.WriteLine(current.data);
+			Console.WriteLine(current.data[0]);
 			if (current.next!=null && current.previous!=null) {
 				Console.Write("<=>");
 			}
@@ -114,11 +114,11 @@ public class DoublyLinkedList
 }
 public class Node {
 		public int key;
-		public string data;
+		public string [] data;
 		public Node next;
 		public Node previous;
 		
-	    public Node (int k, String d)
+	    public Node (int k, string [] d)
 		{
 			key = k;
 			data = d;

@@ -1,11 +1,11 @@
 public class Collision
 {
-    public static void insert (int key, String name, DoublyLinkedList [] myTable) {
+    public static void insert (int key, String  [] data, DoublyLinkedList [] myTable) {
 		
 		int index = hashFunction (key, myTable);
 		DoublyLinkedList dll = new DoublyLinkedList();
 		//DoublyLinkedList.Node n = new DoublyLinkedList.Node(key, name);
-		Node n = new Node(key, name);
+		Node n = new Node(key, data);
 		
 		if (collision(index, myTable)==false) {
 			dll.setHead(n);
@@ -33,7 +33,8 @@ public class Collision
 	public static void printData (DoublyLinkedList [] myTable) {
 		for (int i = 0; i<myTable.Length; i++) {
 			Console.WriteLine("Index "+i+" : ");
-			if (myTable[i]!=null) {
+			if (myTable[i]!=null)
+			{
 				Console.WriteLine("There are "+myTable[i].length+ " record/s");
 				DoublyLinkedList.printNodes(myTable[i]);
 			}

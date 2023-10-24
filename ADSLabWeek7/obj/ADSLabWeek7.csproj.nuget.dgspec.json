@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/zairulmazwan/Dotnet/ADSLabWeek7/ADSLabWeek7/ADSLabWeek7.csproj": {}
+    "/Users/zairulmazwan/Dotnet/ADSLabWeek7_Sol/ADSLabWeek7/ADSLabWeek7.csproj": {}
   },
   "projects": {
-    "/Users/zairulmazwan/Dotnet/ADSLabWeek7/ADSLabWeek7/ADSLabWeek7.csproj": {
+    "/Users/zairulmazwan/Dotnet/ADSLabWeek7_Sol/ADSLabWeek7/ADSLabWeek7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/zairulmazwan/Dotnet/ADSLabWeek7/ADSLabWeek7/ADSLabWeek7.csproj",
+        "projectUniqueName": "/Users/zairulmazwan/Dotnet/ADSLabWeek7_Sol/ADSLabWeek7/ADSLabWeek7.csproj",
         "projectName": "ADSLabWeek7",
-        "projectPath": "/Users/zairulmazwan/Dotnet/ADSLabWeek7/ADSLabWeek7/ADSLabWeek7.csproj",
+        "projectPath": "/Users/zairulmazwan/Dotnet/ADSLabWeek7_Sol/ADSLabWeek7/ADSLabWeek7.csproj",
         "packagesPath": "/Users/zairulmazwan/.nuget/packages/",
-        "outputPath": "/Users/zairulmazwan/Dotnet/ADSLabWeek7/ADSLabWeek7/obj/",
+        "outputPath": "/Users/zairulmazwan/Dotnet/ADSLabWeek7_Sol/ADSLabWeek7/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/zairulmazwan/.nuget/NuGet/NuGet.Config"
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
         }
       }
     }
