@@ -61,14 +61,16 @@ public class Collision
 	public static void getLongestLinkedListIndex(DoublyLinkedList [] myTable)
 	{
 		int index = -1;
+		int longestDLL = -1;
 		for (int i=0; i<myTable.Length; i++)
 		{
 			if (myTable[i] != null)
 			{
-
-				if (myTable[i].length>index)
+				//Console.WriteLine(myTable[i].length);
+				if (myTable[i].length>longestDLL)
 				{
 					index = i;
+					longestDLL = myTable[i].length;
 					
 				}
 					
