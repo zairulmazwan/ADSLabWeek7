@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ScOVrPkHaGfSC16uxcl+iZ9eJGTItVeGcGs/N3P3LGMbWK5cov/6j0wv943QjA9Fjot7PoAXiHZSE0xp7C67Aw==",
+  "dgSpecHash": "z8mCpqdTBv2K1/NwqcqF62O5Ggae8KresDKty9rmAdXA20h4bJLzAo1XDD0+l/f9L1b4mHExztsau54wgw6p7g==",
   "success": true,
   "projectFilePath": "/Users/zairulmazwan/Dotnet/ADSLabWeek7_Sol/ADSLabWeek7/ADSLabWeek7.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/zairulmazwan/.nuget/packages/microsoft.netcore.app.ref/7.0.15/microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "/Users/zairulmazwan/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.15/microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
+    "/Users/zairulmazwan/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.15/microsoft.netcore.app.host.osx-arm64.7.0.15.nupkg.sha512"
+  ],
   "logs": []
 }

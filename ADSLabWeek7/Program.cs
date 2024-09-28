@@ -24,40 +24,40 @@
 string [,] dataset = ReadFile.readCSV();
 // ReadFile.printArray(dataset);
 
-// string [,] linearHS = new string[242,5];
-// for (int i=0; i<dataset.GetLength(0); i++)
-// {
-//   //  Console.WriteLine(dataset[i,3]);
-//    int key = Int32.Parse(dataset[i,3]); //this is the key for the index i.e num_code
-//    string [] row = new string [dataset.GetLength(1)];
+string [,] linearHS = new string[242,5];
+for (int i=0; i<dataset.GetLength(0); i++)
+{
+  //  Console.WriteLine(dataset[i,3]);
+   int key = Int32.Parse(dataset[i,3]); //this is the key for the index i.e num_code
+   string [] row = new string [dataset.GetLength(1)];
 
-//    row[0] = dataset[i,0];
-//    row[1] = dataset[i,1];
-//    row[2] = dataset[i,2];
-//    row[3] = dataset[i,3];
-//    row[4] = dataset[i,4];
+   row[0] = dataset[i,0];
+   row[1] = dataset[i,1];
+   row[2] = dataset[i,2];
+   row[3] = dataset[i,3];
+   row[4] = dataset[i,4];
 
-//   Collision_LinearProbing.insert(key, row, linearHS);
-// }
+  Collision_LinearProbing.insert(key, row, linearHS);
+}
 
 // ReadFile.printArray(linearHS);
 
-// Console.WriteLine("1.	Which country is stored in the first position of the array?");
-// Console.WriteLine(linearHS[0,0]);
+Console.WriteLine("1.	Which country is stored in the first position of the array?");
+Console.WriteLine(linearHS[0,0]);
 
-// Console.WriteLine("2.	Which country is stored in the last position of the array?");
-// Console.WriteLine(linearHS[linearHS.GetLength(0)-1,0]);
+Console.WriteLine("2.	Which country is stored in the last position of the array?");
+Console.WriteLine(linearHS[linearHS.GetLength(0)-1,0]);
 
-// Console.WriteLine("3.	Which country is stored in the 53rd position of the array?");
-// Console.WriteLine(linearHS[52,0]);
+Console.WriteLine("3.	Which country is stored in the 53rd position of the array?");
+Console.WriteLine(linearHS[52,0]);
 
-// Console.WriteLine("4.	What is United Kingdom position in the array?");
-// string uk = "United Kingdom";
-// for (int i=0; i<linearHS.GetLength(0); i++)
-// {
-//   if (linearHS[i,0] == uk)
-//     Console.WriteLine("Index : "+i);
-// }
+Console.WriteLine("4.	What is United Kingdom position in the array?");
+string uk = "United Kingdom";
+for (int i=0; i<linearHS.GetLength(0); i++)
+{
+  if (linearHS[i,0] == uk)
+    Console.WriteLine("Index : "+i);
+}
 
 
 //Double Hashing
@@ -74,7 +74,7 @@ string [,] dataset = ReadFile.readCSV();
 
 //Solution for the storing countries using double hashing
 
-// string [,] doubleHS = new string[242,5];
+string [,] doubleHS = new string[242,5];
 
 // for (int i=0; i<dataset.GetLength(0); i++)
 // {
@@ -143,6 +143,6 @@ for (int i=0; i<dataset.GetLength(0); i++)
 
 Collision.printData(myTable);
 Collision.emptyIndex(myTable);
-// Console.WriteLine(myTable[0].head.data[0]);
-// Console.WriteLine(myTable[0].length);
+Console.WriteLine(myTable[0].head.data[0]);
+Console.WriteLine(myTable[0].length);
 Collision.getLongestLinkedListIndex(myTable);
