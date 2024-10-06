@@ -125,7 +125,7 @@ string [,] doubleHS = new string[242,5];
 // Console.WriteLine("\nFind a user with id 21 "+Collision.findNode(21, myTable));
 
 
-//Solution Tutorial 7: Doubly Linked List
+//Solution Tutorial 7: Doubly Linked List 
 DoublyLinkedList [] myTable = new DoublyLinkedList [100];
 for (int i=0; i<dataset.GetLength(0); i++)
 {
