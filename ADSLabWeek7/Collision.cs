@@ -7,7 +7,7 @@ public class Collision
 		//DoublyLinkedList.Node n = new DoublyLinkedList.Node(key, name);
 		Node n = new Node(key, data);
 		
-		if (collision(index, myTable)==false) {
+		if (!collision(index, myTable)) {
 			dll.setHead(n);
 			myTable [index] = dll;
 		}
