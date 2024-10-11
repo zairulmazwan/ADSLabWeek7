@@ -118,7 +118,7 @@ public class Collision
 		String [] res = null;
 		int index = hashFunction(key, myTable);
 		bool found = findNode(key, myTable);
-		if (found == true) 
+		if (found) 
 		{
 			DoublyLinkedList n = myTable[index];
 			Node head = n.head;
