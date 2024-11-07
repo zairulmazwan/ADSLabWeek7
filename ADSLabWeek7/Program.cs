@@ -101,7 +101,6 @@ Console.WriteLine("3.	Which country is stored in the 53rd position of the array?
 Console.WriteLine(doubleHS[52,0]);
 
 Console.WriteLine("4.	What is United Kingdom position in the array?");
-//string uk = "United Kingdom";
 for (int i=0; i<doubleHS.GetLength(0); i++)
 {
   if (doubleHS[i,0] == uk)
