@@ -120,7 +120,7 @@ public class Node {
 	    public Node (int k, string [] d)
 		{
 			key = k;
-			data = d;
+			data = (String []) d.Clone();
 			next = null;
 			previous = null;
 		}
